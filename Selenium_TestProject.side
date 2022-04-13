@@ -1,0 +1,91 @@
+{
+  "id": "53df0846-ea4f-4acd-abec-d5a79c6d4059",
+  "version": "2.0",
+  "name": "TestProject",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "a1d227e5-9885-4860-a252-7ca5a48333f1",
+    "name": "test1",
+    "commands": [{
+      "id": "26ba8a8d-4c96-4d61-9bb3-dce7d76f2546",
+      "comment": "",
+      "command": "open",
+      "target": "/search?q=brand+positioning+hexagon&tbm=isch&sxsrf=APq-WBstTNJzxQaEvIBJXPqlSUbBzd-GqA%3A1649534794946&source=hp&biw=1080&bih=524&ei=SudRYqPTN87osAeAnJvgBg&iflsig=AHkkrS4AAAAAYlH1WvMBvsaC-xsmIW6qKs5SaX_cnFce&oq=b&gs_lcp=CgNpbWcQAxgAMgcIIxDvAxAnMgcIIxDvAxAnMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMggIABCxAxCDATILCAAQgAQQsQMQgwEyCAgAELEDEIMBMgQIABADMggIABCxAxCDAToICAAQgAQQsQM6CggjEO8DEOoCECc6BQgAEIAEUABYx7kCYJXHAmgRcAB4AIAB5wGIAfwMkgEFMC44LjKYAQCgAQGqAQtnd3Mtd2l6LWltZ7ABCg&sclient=img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9022e99c-edff-422f-93c2-a89f7037be79",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,150.1875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ffcd780-95c5-4ed2-875a-f9a5e851244b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "n"
+    }, {
+      "id": "f4577e78-44fd-4d2d-b4bf-81ae5e9b356b",
+      "comment": "",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d436bb6-689e-4c23-994a-c9e73f8c5153",
+      "comment": "",
+      "command": "echo",
+      "target": "n=${n}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6b8ea48-e15a-4a39-a91b-8e6f80429669",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@class='fxgdke']",
+      "targets": [],
+      "value": "nMax"
+    }, {
+      "id": "fe65ccd2-4a6b-4d43-a76a-978a3a2a3efb",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=(//div[@class='fxgdke'])[${n}]",
+      "targets": [],
+      "value": "myVar"
+    }, {
+      "id": "1100030a-228a-443d-aa08-97e9cb04527a",
+      "comment": "",
+      "command": "echo",
+      "target": "site=${myVar}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1afcead2-caf5-40b3-8df6-2e435b3fe540",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${n}+1",
+      "targets": [],
+      "value": "n"
+    }, {
+      "id": "0968597a-05db-4ca0-af3a-7a35e4093fd3",
+      "comment": "",
+      "command": "repeatIf",
+      "target": "${n} < ${nMax}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bdc7851a-a058-4c4d-a686-306e9fb6ef5f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a1d227e5-9885-4860-a252-7ca5a48333f1"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
